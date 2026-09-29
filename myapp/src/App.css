@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    135deg,
+    #4f46e5,
+    #9333ea
+  );
+}
+
+
+/* =========================
+   MAIN PAGE
+========================= */
+
+.page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 30px;
+}
+
+
+/* =========================
+   LOGIN CARD
+========================= */
+
+.login-card {
+  width: 1000px;
+  min-height: 600px;
+
+  display: flex;
+
+  background: white;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.left-side {
+  width: 50%;
+
+  position: relative;
+
+  background-image:
+    linear-gradient(
+      135deg,
+      rgba(20, 30, 100, 0.80),
+      rgba(80, 40, 180, 0.45)
+    ),
+    url("https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=90");
+
+  background-size: cover;
+
+  background-position: center;
+}
+
+
+/* LEFT OVERLAY */
+
+.overlay {
+  height: 100%;
+
+  padding: 45px;
+
+  color: white;
+}
+
+
+/* LOGO */
+
+.logo {
+  font-size: 24px;
+
+  font-weight: bold;
+
+  letter-spacing: 4px;
+}
+
+
+/* WELCOME TEXT */
+
+.welcome-content {
+  margin-top: 160px;
+}
+
+.welcome-content h1 {
+  font-size: 46px;
+
+  line-height: 1.15;
+
+  margin-bottom: 22px;
+}
+
+.welcome-content h1 span {
+  color: #63ddff;
+}
+
+.welcome-content p {
+  width: 85%;
+
+  font-size: 16px;
+
+  line-height: 1.7;
+
+  color: #f1f5ff;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.right-side {
+  width: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 60px;
+}
+
+
+/* LOGIN BOX */
+
+.login-box {
+  width: 100%;
+}
+
+
+/* TITLE */
+
+.login-box h2 {
+  font-size: 38px;
+
+  color: #2875ed;
+
+  margin-bottom: 10px;
+}
+
+
+/* SUBTITLE */
+
+.subtitle {
+  color: #777;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  margin-bottom: 32px;
+}
+
+
+/* LABEL */
+
+.login-box > label {
+  display: block;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #444;
+
+  margin-bottom: 8px;
+}
+
+
+/* INPUT */
+
+.login-box input[type="email"],
+.login-box input[type="password"] {
+  width: 100%;
+
+  height: 48px;
+
+  border: 1px solid #d8dce5;
+
+  border-radius: 8px;
+
+  padding: 0 15px;
+
+  font-size: 14px;
+
+  outline: none;
+
+  margin-bottom: 20px;
+}
+
+.login-box input:focus {
+  border-color: #2875ed;
+
+  box-shadow:
+    0 0 0 3px rgba(40, 117, 237, 0.1);
+}
+
+
+/* =========================
+   OPTIONS
+========================= */
+
+.options {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+
+/* REMEMBER */
+
+.remember {
+  display: flex !important;
+
+  align-items: center;
+
+  gap: 7px;
+
+  font-size: 13px !important;
+
+  font-weight: normal !important;
+
+  color: #666 !important;
+
+  margin: 0 !important;
+}
+
+.remember input {
+  width: 16px;
+
+  height: 16px;
+
+  margin: 0;
+
+  accent-color: #2875ed;
+}
+
+
+/* FORGOT PASSWORD */
+
+.forgot {
+  border: none;
+
+  background: none;
+
+  color: #2875ed;
+
+  font-size: 13px;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   LOGIN BUTTON
+========================= */
+
+.login-btn {
+  width: 100%;
+
+  height: 50px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  background: linear-gradient(
+    90deg,
+    #2875ed,
+    #2699ed
+  );
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 8px 20px rgba(40, 117, 237, 0.3);
+}
+
+.login-btn span {
+  margin-left: 8px;
+
+  font-size: 19px;
+}
+
+
+/* =========================
+   OR DIVIDER
+========================= */
+
+.divider {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin: 25px 0;
+}
+
+.divider div {
+  flex: 1;
+
+  height: 1px;
+
+  background: #dddddd;
+}
+
+.divider span {
+  color: #999;
+
+  font-size: 12px;
+}
+
+
+/* =========================
+   GOOGLE BUTTON
+========================= */
+
+.google-btn {
+  width: 100%;
+
+  height: 50px;
+
+  background: white;
+
+  border: 1px solid #d8dce5;
+
+  border-radius: 8px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 12px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  color: #444;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.google-btn:hover {
+  background: #f8f9fc;
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* GOOGLE G */
+
+.google-icon {
+  font-size: 21px;
+
+  font-weight: bold;
+
+  color: #4285f4;
+}
+
+
+/* =========================
+   SIGN UP
+========================= */
+
+.signup-text {
+  text-align: center;
+
+  margin-top: 25px;
+
+  color: #777;
+
+  font-size: 14px;
+}
+
+.signup-btn {
+  border: none;
+
+  background: none;
+
+  color: #2875ed;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  margin-left: 5px;
+
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 750px) {
+
+  .login-card {
+    flex-direction: column;
+  }
+
+  .left-side {
+    width: 100%;
+
+    min-height: 320px;
+  }
+
+  .right-side {
+    width: 100%;
+
+    padding: 40px 30px;
+  }
+
+  .welcome-content {
+    margin-top: 80px;
+  }
+
+  .welcome-content h1 {
+    font-size: 36px;
+  }
+}

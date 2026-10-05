@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f7fb;
+}
+
+/* MAIN PAGE */
+.task-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f4f7fb, #eef3ff);
+}
+
+/* HEADER */
+.task-header {
+  height: 80px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.task-header h1 {
+  margin: 0;
+  font-size: 25px;
+  letter-spacing: 3px;
+  color: #2563eb;
+}
+
+.task-header p {
+  margin: 4px 0 0;
+  color: #777;
+  font-size: 14px;
+}
+
+/* LOGOUT */
+.logout-btn {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: #174db5;
+}
+
+/* CONTAINER */
+.task-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+/* WELCOME */
+.welcome {
+  margin-bottom: 30px;
+}
+
+.welcome h2 {
+  margin: 0;
+  font-size: 30px;
+  color: #1f2937;
+}
+
+.welcome p {
+  color: #6b7280;
+  margin-top: 8px;
+}
+
+/* STATS */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+.stat-card h3 {
+  margin: 0;
+  font-size: 32px;
+  color: #2563eb;
+}
+
+.stat-card p {
+  margin: 8px 0 0;
+  color: #6b7280;
+}
+
+/* ADD TASK */
+.add-task {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  gap: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+  margin-bottom: 30px;
+}
+
+.add-task input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1px solid #d6dce5;
+  border-radius: 9px;
+  font-size: 15px;
+  outline: none;
+}
+
+.add-task input:focus {
+  border-color: #2563eb;
+}
+
+.add-task button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 0 25px;
+  border-radius: 9px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-task button:hover {
+  background: #174db5;
+}
+
+/* TASK LIST */
+.task-list {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.task-list h2 {
+  margin-top: 0;
+  color: #1f2937;
+}
+
+/* NO TASK */
+.no-task {
+  text-align: center;
+  color: #9ca3af;
+  padding: 35px;
+}
+
+/* TASK ITEM */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px;
+  margin-top: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.task-item:hover {
+  background: #f8faff;
+}
+
+.task-left {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.task-left input {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.task-left span {
+  font-size: 16px;
+  color: #374151;
+}
+
+/* COMPLETED */
+.task-item.completed .task-left span {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+/* ACTION BUTTONS */
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.task-actions button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.edit-btn {
+  background: #e8f0ff;
+  color: #2563eb;
+}
+
+.edit-btn:hover {
+  background: #d7e4ff;
+}
+
+.delete-btn {
+  background: #ffe8e8;
+  color: #dc2626;
+}
+
+.delete-btn:hover {
+  background: #ffd5d5;
+}
+
+/* MOBILE */
+@media (max-width: 700px) {
+
+  .task-header {
+    padding: 0 20px;
+  }
+
+  .task-container {
+    width: 94%;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .add-task {
+    flex-direction: column;
+  }
+
+  .add-task button {
+    padding: 13px;
+  }
+
+  .task-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .task-actions {
+    width: 100%;
+  }
+}
